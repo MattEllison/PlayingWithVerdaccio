@@ -6,15 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "ii": "npm install my_npm_pkg2 --registry http://localhost:4873"
+    "ii": "npm install my_npm_pkg2 --registry http://localhost:4873",
+    "b2": "webpack",
+    "serve": "lite-server --baseDir=./dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/react": "^16.9.34",
-    "my_npm_pkg2": "^1.0.16",
-    "react": "^16.13.1",
-    "typescript": "^3.8.3"
+    "@types/react-dom": "^16.9.6",
+    "my_npm_pkg2": "^1.0.16"
+  },
+  "devDependencies": {
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }
